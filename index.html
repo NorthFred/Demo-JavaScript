@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Code and decode my text - DEMO</title>
+    <meta charset="UTF-8">
+    <script data-require="jquery@*" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <h1>DEMO: Code and decode my text</h1>
+    <br />
+    <p>
+      This demo takes in text and "codes" it by shifting the keyboard letters one place forward.
+    </p>
+    <p>
+      E.g.: 'q'  --> 'w'  , 'a' --> 's'  , 'ä' --> 'a'. 
+    </p>
+    <p>
+      Ticking the "Backwards" button will "de-code" the message (or perform a reverse translation).
+    </p>
+    <p><em>Example: 'test' in forward coding will give 'yrdy', this in turn backwards will give 'test'. </em></p>
+    <p><em>Example: 'test' in backward coding will give 'rwar' </em></p>
+    <br />
+    <label>Enter text to encode: </label>
+    <input id="inputcode" type="text" />
+    <input id="direction" type="checkbox" /> Backwards
+        <br />
+    <br />
+    <button id="btn">Code my text!</button>
+    <br />
+    <p>
+      <strong>Output:</strong>
+    </p>
+    <p id="output"></p>
+  </body>
+
+</html>
